@@ -47,6 +47,15 @@
 		<h2> TABLEAU</h2>
 		<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas).Pour chaque element du tableau nous avons une balise:</p>
 			
+		<pre>
+			&lt; tableau &gt;
+				&lt; tr &gt;
+					&lt; td &gt;  Nom &lt;/td&gt;
+					&lt; td &gt;  Prenom &lt;/td&gt;
+				&lt; /tr &gt;
+			&lt; /tableau &gt;
+		</pre>
+		<p>Exemple:</p>
 		<table>
 			<tr>
 				<td> tableau </td>
@@ -61,6 +70,7 @@
 				<td> &lt; td &gt; </td>
 			</tr>
 		</table>
+		
 		<h3> Ligne d'entête et ligne de pied</h3>
 		<p> Pour creer un entête nous devons faire la commande suivante:</p>
 		<pre>
@@ -81,7 +91,30 @@
 				&lt; /foot &gt;
 			&lt; /tableau &gt;
 		</pre>	
-			
+		<p> Pas importe ou se deplace "thead" ou "tfoot" ils vont se mettre dans la même position par defaut. Par contre il va toujours être lu en premier, et il doit être ècrit dans la premier ligne après la declaration de la balise tableau.</p>
+		<p> Parfois nous avons besoin de surligner une ligne d'abord, pour cela nous devons utiliser la commande suivante:</p>
+		<pre>
+			&lt; tableau &gt;	
+				&lt; tr &gt;
+					&lt; th &gt; A &lt;/th&gt;
+					&lt; td &gt; &lt;/td&gt;
+				&lt; /tr &gt;
+			&lt; /tableau &gt;
+		</pre>
+		
+		<h3> Fusionner des cellules</h3>
+		<p> Nous utilisons des attributs pour savoir la postion de largeur et longeur:</p>
+		
+		<pre>
+			&lt; td rowspan = "2"
+					colspan = "2" / &gt;
+		</pre>
+		
+		<h3> Ajouter une legende dans le tableau</h3>
+		<p> Dans la balise table nous ecrivons une balise caption avec le texte de la legende. Nous devons l'ecrire seulement au debut de la declaration de la table et il faut que soit un enfent direct de notre table</p>
+		<pre>			
+				&lt; caption &gt; Ma legende &lt;/caption &gt;
+		</pre>	
 		<aside>
 			<ul>
 				<p> Lien d'intêrets </p>
