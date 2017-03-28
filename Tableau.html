@@ -101,6 +101,29 @@
 				&lt; /tr &gt;
 			&lt; /tableau &gt;
 		</pre>
+		<p>Exemple:</p>
+		<table>
+			<thead>
+				<th> Element </th>
+				<th> Balise </th>
+			</thead>
+			<tfoot>
+				<th> Element </th>
+				<th> Balise </th>
+			</tfoot>
+			<tr>
+				<td> tableau </td>
+				<td> &lt; tableau &gt; </td>
+			</tr>
+			<tr>
+				<td> ligne </td>
+				<td> &lt; tr &gt; </td>
+			</tr>
+			<tr>
+				<td> cellule </td>
+				<td> &lt; td &gt; </td>
+			</tr>
+		</table>
 		
 		<h3> Fusionner des cellules</h3>
 		<p> Nous utilisons des attributs pour savoir la postion de largeur et longeur:</p>
@@ -110,11 +133,44 @@
 					colspan = "2" / &gt;
 		</pre>
 		
+		<p>Exemple:</p>
+		<table>
+			<tr>
+				<td rowspan="2"
+					colspan="2"> tableau </td>
+				<td> &lt; tableau &gt; </td>
+			</tr>
+			<tr>
+				<td> ligne </td>
+				<td> &lt; tr &gt; </td>
+			</tr>
+			<tr>
+				<td> cellule </td>
+				<td> &lt; td &gt; </td>
+			</tr>
+		</table>
+		
 		<h3> Ajouter une legende dans le tableau</h3>
 		<p> Dans la balise table nous ecrivons une balise caption avec le texte de la legende. Nous devons l'ecrire seulement au debut de la declaration de la table et il faut que soit un enfent direct de notre table</p>
 		<pre>			
 				&lt; caption &gt; Ma legende &lt;/caption &gt;
-		</pre>	
+		</pre>
+		<p>Exemple:</p>
+		<table>
+			<caption> Ma legende </caption>
+			<tr>
+				<td> tableau </td>
+				<td> &lt; tableau &gt; </td>
+			</tr>
+			<tr>
+				<td> ligne </td>
+				<td> &lt; tr &gt; </td>
+			</tr>
+			<tr>
+				<td> cellule </td>
+				<td> &lt; td &gt; </td>
+			</tr>
+		</table>
 		<aside>
 			<ul>
 				<p> Lien d'intêrets </p>
