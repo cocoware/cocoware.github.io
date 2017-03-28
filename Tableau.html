@@ -37,67 +37,50 @@
 				<li> 
 					<a href="GITGITHUB.html">GIT et GITHUB </a>
 				</li>
+				<li> 
+					<a href="Tableau.html">Tableau </a>
+				</li>
 			</ol>
 		</nav>
 
 	
 		<h2> TABLEAU</h2>
-		<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas) .
-			Pour chaque element du tableau nous avons une balise:</p>
+		<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas).Pour chaque element du tableau nous avons une balise:</p>
 			
 		<table>
 			<tr>
 				<td> tableau </td>
-				<td> &lt tableau &gt; </td>
+				<td> &lt; tableau &gt; </td>
 			</tr>
 			<tr>
 				<td> ligne </td>
-				<td> &lt tr &gt; </td>
+				<td> &lt; tr &gt; </td>
 			</tr>
 			<tr>
 				<td> cellule </td>
-				<td> &lt td &gt; </td>
+				<td> &lt; td &gt; </td>
 			</tr>
-			
-
-		<h3> Balises ouvrantes, fermantes et autofermantes</h3>
-
-		<ol> 
-			<li> &lt; Balise ouvrantes &gt;</li>
-			<li> &lt; / Balise fermantes &gt; </li>
-			<li> &lt; Balise autofermantes / &gt; </li>	
-		</ol>
-		<h2> BALISES BLOQUES </h2>
-	
-		<p> Le contenu des balises bloques, va a essayer de occuper le maximun d'espace dans le bloque à niveau de largeur </p>
-
-		<h3> BALISES POUR LES TITRES </h3>
+		<h3> Ligne d'entête et ligne de pied</h3>
+		<p> Pour creer un entête nous devons faire la commande suivante:</p>
 		<pre>
-			&lt; h1 &gt; &lt; /h1 &gt;
-			&lt; h2 &gt; &lt; /h2 &gt;	
-			&lt; h3 &gt; &lt; /h3 &gt;		
-			&lt; h4 &gt; &lt; /h4 &gt;		
-			&lt; h5 &gt; &lt; /h5 &gt;		
-			&lt; h6 &gt; &lt; /h6 &gt;	
+			&lt; tableau &gt;
+				&lt; thead &gt;
+					&lt; th &gt;  Nom &lt;/th&gt;
+					&lt; th &gt;  Prenom &lt;/th&gt;
+				&lt; /thead &gt;
+			&lt; /tableau &gt;
+		</pre>
 
-		</pre> 
-					
-		<h3> BALISE POUR LES TEXTES </h3>
-
-		<p> &lt; p &gt; &lt; /p &gt;</p>	
-	
-		<h2> BALISES EN LIGNE </h2>
-	
-		<p> Son affichage est un à côté des autres </p>
-					
-		<h3> &lt; em &gt; &lt; /em &gt; </h3>
-		<p> Utiliser pour donner une importance du texte </p>
-	
-		<h3> &lt; mark &gt; &lt; /mark &gt; </h3>
-		<p> Utiliser pour donner une très grand importance du texte </p>
-	
-		<h3> &lt; em &gt; &lt; /em &gt; </h3>
-		<p> Utiliser pour surligner </p>
+		<p> Pour creer une ligne de pied nous devons faire la commande suivante:</p>
+		<pre>
+			&lt; tableau &gt;	
+				&lt; tfoot &gt;
+					&lt; th &gt; &lt;/th&gt;
+					&lt; th &gt; &lt;/th&gt;
+				&lt; /foot &gt;
+			&lt; /tableau &gt;
+		</pre>	
+			
 		<aside>
 			<ul>
 				<p> Lien d'intêrets </p>
