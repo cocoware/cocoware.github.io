@@ -1,0 +1,38 @@
+.photo{
+	position: relative;
+	left: 50px;
+	bottom: 70px;
+	
+}
+.titre1{
+	position: relative;
+	display: inline-block;
+	left: 550px;
+	color:#002F2F;
+
+	
+}
+.sommaire{
+	background-color: #EDF7F2;
+	border: 10px groove black;
+	
+	
+	
+}
+.raccourci{
+	background-color: rgba(255,0,0,0.3);
+	border: 10px groove black;
+	display: inline-block;
+	position: relative;
+	left: 1250px;
+	top: -80px;
+	padding-bottom: 300px;
+}
+.texte{
+	
+	padding-right: 300px;
+	display: inline-block;
+}
+.corp{
+	background-color: #7FC6BC;
+}
