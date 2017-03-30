@@ -82,8 +82,8 @@ h3{
 	font-family: Arial, serif;
 }
 .sautpage{
-	position: fixed;
-  top: 190px;
+	display: inline-block;
+  top: 170px;
   left: 1250px;
   width: 200px;
   height: 400px;
