@@ -26,15 +26,19 @@
 						</li>
 					</ul>
 				</div>	
-			</nav>	
-			<h2> DEFINITION HTML</h2>
+			</nav>
+      <div id="definition">
+        <h2> DEFINITION HTML</h2>
+      </div>
 			<dt> HTML </dt>
-			<dd> <em>Hypertext Markup Language</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
+			<dd> <em>Hypertext Markup Language</em> ou en franÃ§ais <Strong>langage de balisage hypertext</strong>.</dd>
 			
-			<p>Sa crèation a eu lieu en 1991. Sa fonction est structurer et donnée du sens à du contenu. Nous permettre d'inserer differents</p>
+			<p>Sa crÃ©ation a eu lieu en 1991. Sa fonction est structurer et donnÃ©e du sens oÃ¹ du contenu. Nous permettre d'inserer differents</p>
 			<p>types des elements des nos pages web: du texte des liens , des images,etc.</p>
-			<h2> DEFINITION D'UNE STRUCTURE MINIMAL D'UN DOCUMENT HTML </h2>
-			<pre class="blanc">
+      <div id="structure">
+        <h2> DEFINITION D'UNE STRUCTURE MINIMAL D'UN DOCUMENT HTML </h2>
+       </div>
+			<pre class="red">
 			&lt; !DOCTYPEHTML&gt;  
 				&lt; html &gt;
 					&lt; head &gt;
@@ -45,11 +49,53 @@
 					&lt; /body &gt;
 				&lt; /html &gt;   		
 			</pre>
-			<h2> TABLEAU</h2>
+      <div id="balise">
+        <h2> TYPE DES BALISES </h2>
+      </div>
+		  <p> Les balises sont represente normalement par des chevrons <em>&lt; &gt;</em>. </p>
+
+		  <h3> Balises ouvrantes, fermantes et autofermantes</h3>
+
+		  <ol class="red"> 
+			  <li> &lt; Balise ouvrantes &gt;</li>
+			  <li> &lt; / Balise fermantes &gt; </li>
+			  <li> &lt; Balise autofermantes / &gt; </li>	
+		  </ol>
+		  <h2> BALISES BLOQUES </h2>
+	
+		  <p> Le contenu des balises bloques, va a essayer de occuper le maximun d'espace dans le bloque au niveau de largeur </p>
+
+		  <h3> BALISES POUR LES TITRES </h3>
+		  <pre class="red">
+			  &lt; h1 &gt; &lt; /h1 &gt;
+			  &lt; h2 &gt; &lt; /h2 &gt;	
+			  &lt; h3 &gt; &lt; /h3 &gt;		
+			  &lt; h4 &gt; &lt; /h4 &gt;		
+			  &lt; h5 &gt; &lt; /h5 &gt;		
+			  &lt; h6 &gt; &lt; /h6 &gt;	
+		  </pre> 			
+		  <h3> BALISE POUR LES TEXTES </h3>
+		  <p class="red"> &lt; p &gt; &lt; /p &gt;</p>	
+    
+		  <h3> BALISES EN LIGNE </h3>
+	
+		  <p> Son affichage est un Ã  cÃ´tÃ© des autres </p>
+					
+		  <pre class="red"> &lt; em &gt; &lt; /em &gt; </pre>
+		  <p> Utiliser pour donner une importance du texte </p>
+	
+		  <pre class="red"> &lt; mark &gt; &lt; /mark &gt; </pre>
+		  <p> Utiliser pour donner une trÃ¨s grand importance du texte </p>
+	
+		  <pre class="red"> &lt; em &gt; &lt; /em &gt; </pre>
+		  <p> Utiliser pour surligner </p>
+      <div id="tableau">
+			  <h2> TABLEAU</h2>
+      </div>
 			<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas).Pour chaque element du tableau nous avons  </p>
 			<p> une balise:</p>
 			
-			<pre class="blanc">
+			<pre class="red">
 			&lt; tableau &gt;
 				&lt; tr &gt;
 					&lt; td &gt;  Nom &lt;/td&gt;
@@ -73,9 +119,9 @@
 				</tr>
 			</table>
 		
-			<h3> Ligne d'entête et ligne de pied</h3>
-			<p> Pour creer un entête nous devons faire la commande suivante:</p>
-			<pre class="blanc">
+			<h3> Ligne d'entÃªte et ligne de pied</h3>
+			<p> Pour creer un entÃªte nous devons faire la commande suivante:</p>
+			<pre class="red">
 			&lt; tableau &gt;
 				&lt; thead &gt;
 					&lt; tr &gt;
@@ -87,7 +133,7 @@
 			</pre>
 
 			<p> Pour creer une ligne de pied nous devons faire la commande suivante:</p>
-			<pre class="blanc">
+			<pre class="red">
 			&lt; tableau &gt;	
 				&lt; tfoot &gt;
 					&lt; tr &gt;
@@ -97,10 +143,10 @@
 				&lt; /foot &gt;
 			&lt; /tableau &gt;
 			</pre>	
-			<p>Pas importe ou se deplace "thead" ou "tfoot" ils vont se mettre dans la même position par defaut. Par contre il va toujours</p> 
-			<p>être lu en premier, et il doit être ècrit dans la premier ligne après la declaration de la balise tableau.</p>
+			<p>Pas importe ou se deplace "thead" ou "tfoot" ils vont se mettre dans la mÃªme position par defaut. Par contre il va toujours</p> 
+			<p>Ãªtre lu en premier, et il doit Ãªtre Ã©crit dans la premier ligne aprÃ¨s la declaration de la balise tableau.</p>
 		    <p>Parfois nous avons besoin de surligner une ligne d'abord, pour cela nous devons utiliser la commande suivante:</p>
-			<pre class="blanc">
+			<pre class="red">
 			&lt; tableau &gt;	
 				&lt; tr &gt;
 					&lt; th &gt; A &lt;/th&gt;
@@ -139,9 +185,9 @@
 			<h3> Fusionner des cellules</h3>
 			<p> Nous utilisons des attributs pour savoir la postion de largeur et longeur:</p>
 		
-			<pre class="blanc">
-			&lt; td rowspan = "2"
-					colspan = "2" / &gt;
+			<pre class="red">
+        &lt; td rowspan = "2"
+				colspan = "2" / &gt;
 			</pre>
 		
 			<p><strong>Exemple:</strong></p>
@@ -162,7 +208,7 @@
 			<h3> Ajouter une legende dans le tableau</h3>
 			<p> Dans la balise table nous ecrivons une balise caption avec le texte de la legende. Nous devons l'ecrire seulement au debut de la declaration de la table et</p>
 			<p>il faut que soit un enfent direct de notre table</p>
-			<pre class="blanc">			
+			<pre class="red">			
 				&lt; caption &gt; Ma legende &lt;/caption &gt;
 			</pre>
 			<p><strong>Exemple:</strong></p>
@@ -181,68 +227,79 @@
 					<td> &lt; td &gt; </td>
 				</tr>
 			</table>
-			<h2> BALISES POUR FAIRE DES LISTES </h2>
+      <div id="listes">
+			  <h2> BALISES POUR FAIRE DES LISTES </h2>
+      </div>
 	
-			<p> Il y a trois types des listes très utilisé </p>
-			<ol class="blanc">&lt; ol &gt;
+			<p> Il y a trois types des listes trÃ¨s utilisÃ© </p>
+			<ol class="red">&lt; ol &gt;
 				<li>  &lt; li &gt; liste &lt; /li &gt; </li>
 				<li> &lt; li &gt;ordonne &lt; /li &gt; </li>
 				&lt; ol /&gt;
 			</ol>
 		
-			<ul class="blanc">&lt; ul &gt;
+			<ul class="red">&lt; ul &gt;
 				<li>  &lt; li &gt; <strong>liste</strong> &lt; /li &gt; </li>
 				<li> &lt; li &gt;<strong>desordonne</strong> &lt; /li &gt; </li>
 			
 				&lt; ul /&gt;
 			</ul>	
 	
-			<dl class="blanc">
+			<dl class="red">
 				<p>&lt; ol &gt;</p>
 				<dt>  &lt; dt &gt; <strong>therme</strong> &lt; /dt &gt; </dt>
 				<dd> &lt; dd &gt;<strong>definition</strong> &lt; /dd &gt; </dd>
 			
 				<p>&lt; dl /&gt;</p>
 			</dl>
-			<h2> Creer des liens </h2>
+      <div id="liens">
+			  <h2> Creer des liens </h2>
+      </div>
 			<p> Pour creer des liens nous avons besoin de utiliser du texte suivant </p>
-			<p> <strong>target</strong>: cet attribut indique où afficher la ressource liée. Il s'agit du nom, où de mot-vlé, d'un contexte</p>
-			<p>de navigation ( par exemple, un onglet, une fenêtre, où des &lt; iframe  &gt; ). Les mots-clès suivant ont un sens particulier:</p>
+			<p> <strong>target</strong>: cet attribut indique oÃ¹ afficher la ressource liÃ©e. Il s'agit du nom, oÃ¹ de mot-clÃ©, d'un contexte</p>
+			<p>de navigation ( par exemple, un onglet, une fenÃªtre, oÃ¹ des &lt; iframe  &gt; ). Les mots-clÃ©s suivant ont un sens particulier:</p>
 				<ul>
-					<li> <strong>_self</strong>: charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut n'est pas renseigné.</li>
-					<li> <strong>_blank</strong>: charge la réponse dans un nouveau contexte de navigateur.</li>
-					<li> <strong>_parent</strong>: charge la réponse dans le &lt; iframe  &gt; courant où dans le contexte de navigateur HTML5 relativement au contextecourant.S'il n'y a pas de parent; l'option se comporte de la même façon que _self. </li>
-					<li> <strong>_top</strong>: en HTML4; charge la réponse dans la fenêtre originale, annulent toutes les autres frames. En HTML5; charge la reponse dans le contextede navigateur de plus haut niveau ( c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui même aucun parent). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
+					<li> <strong>_self</strong>: charge la rÃ©ponse dans le contexte de navigation courant. Il s'agit de la valeur par dÃ©faut quand l'attribut n'est pas renseignÃ©.</li>
+					<li> <strong>_blank</strong>: charge la rÃ©ponse dans un nouveau contexte de navigateur.</li>
+					<li> <p><strong>_parent</strong>: charge la rÃ©ponse dans le &lt; iframe  &gt; courant oÃ¹ dans le contexte de navigateur HTML5 relativement au contextecourant.</p>
+          <p>S'il n'y a pas de parent; l'option se comporte de la mÃªme faÃ§on que _self.</p> </li>
+					<li> <p><strong>_top</strong>: en HTML4; charge la rÃ©ponse dans la fenÃªtre originale, annulent toutes les autres frames. En HTML5; charge la reponse dans le</p>
+          <p>contextede navigateur de plus haut niveau ( c'est Ã  dire, le contexte de navigation parent par rapport Ã  l'actuel, et qui n'a lui mÃªme aucun parent).</p>
+          <p>S'il n'y a pas de parent, l'option se comporte de la mÃªme faÃ§on que _self.</p></li>
 				</ul>	
 			<h3> Lien interne </h3>
-			<p> Les liens internes vont être des liens ramenant vers d'autres pages au sein d'un même site. Dans ce cas, nous allons renseigner</p>
+			<p> Les liens internes vont Ãªtre des liens ramenant vers d'autres pages au sein d'un mÃªme site. Dans ce cas, nous allons renseigner</p>
 			<p>une valeur relative pour notre attribut <em>href</em>.</p>
 			<p> Pour creer des liens internes, il faut donc distinguer trois cas:</p>
 			<ol>
-				<li> Le cas où la page de départ et celle de destination sont dans une même dossier </li>
-				<li> Le cas où la page de destination est dans un sous dossier par rapport à la page de départ. </li>
-				<li> Le cas où la page de destination est dans un dossier parent par rapport à la page du départ.</li>
+				<li> Le cas oÃ¹ la page de dÃ©part et celle de destination sont dans une mÃªme dossier </li>
+				<li> Le cas oÃ¹ la page de destination est dans un sous dossier par rapport Ã  la page de dÃ©part. </li>
+				<li> Le cas oÃ¹ la page de destination est dans un dossier parent par rapport Ã  la page du dÃ©part.</li>
 			</ol>
 			<h3> Lien externe en HTML</h3>
-			<p> Les liens externes vont être des liens ramenant vers des pages d'autres sites. Pour créer un lien externe, on va devoir indiquer</p>
-			<p>l'URL complète de destination du lien.</p>
-			<h2> AJOUTER UNE IMAGE</h2>
+			<p> Les liens externes vont Ãªtre des liens ramenant vers des pages d'autres sites. Pour crÃ©er un lien externe, on va devoir indiquer</p>
+			<p>l'URL complÃ©te de destination du lien.</p>
+      <div id="image">
+			  <h2> AJOUTER UNE IMAGE</h2>
+      </div>
 			<p> Pour ajouter une image nous avons besoin de saisir la commande suivante:</p>
-			<pre class="blanc">
+			<pre class="red">
 				&lt; img src="url.image" alt="texte" /&gt;
 			</pre>
 		
-			<p> Nous avons toujours besoin d'utiliser un texte pour differents raison entre autres pour les malveillants.</p>
+			<p> Nous avons toujours besoin d'utiliser un texte pour differents raison entre autres pour les malvoyants.</p>
 			<p> Exemple: </p>
 		
 			<img src="images.jpg" alt="Street art"/>
-			<h2> GIT ET GITHUB </h2>
+      <div id="git">
+			  <h2> GIT ET GITHUB </h2>
+      </div>
 			 
-			<p>	La fonction <mark>git ini</mark> initialise le fichier. Il faut avoir le fichier tout seul, pour mettre le document à disparaitre d'internet.
-			Après on utlise <mark>git add -A</mark> pour mettre le dossier html sur git.
-			<mark>git status</mark> pour savoir l'etat de le dèpôt.
-			<mark>git commit -m "Firstcommit"</mark> avec ça le git. est prêt pour l'envoyer vers <strong>github </strong>
-			Après il faut s'enregistrer sur git
+			<p>	La fonction <mark>git ini</mark> initialise le fichier. Il faut avoir le fichier tout seul, pour mettre le document Ã  disparaitre d'internet.</p>
+			<p>AprÃ¨s on utlise <mark>git add -A</mark> pour mettre le dossier html sur git.</p>
+			<p>Nous utilisons<mark>git status</mark> pour savoir l'etat de le dÃ©pÃ´t.</p>
+			<p>Pour finir<mark>git commit -m "Firstcommit"</mark> le git. est prÃªt pour l'envoyer vers <strong>github </strong></p>
+			<p>AprÃ¨s il faut s'enregistrer sur git</p>
 	
 			</p>
 			<ul>
@@ -252,15 +309,18 @@
 				<li> git push... </li>
 			
 			</ul>
-			<p>Après on refraichi la page.</p>
+			<p>AprÃ¨s on refraichi la page.</p>
 			<aside class="sautpage">
+        <div class="som"><strong> Sommaire</strong></div>
 				<ol>
-					<li> Definition d'une structure minimal d'un document HTML</li>
-					<li> Tableau </li>
-					<li> Listes </li>
-					<li> Liens </li>
-					<li> Image </li>
-					<li> Git et GitHub </li>
+          <li> <a href="#definition">Definition HTML</a></li>
+					<li> <a href="#structure">Definition d'une structure minimal d'un document HTML</a></li>
+          <li> <a href="#balise">Balises </a></li>
+					<li> <a href="#tableau">Tableau </a></li>
+					<li> <a href="#listes">Listes</a></li>
+					<li> <a href="#liens">Liens</a></li>
+					<li> <a href="#image">Image</a></li>
+					<li> <a href="#git">Git et GitHub </a></li>
 				</ol>
 			</aside>
 			<footer class="piedpage">  <p><strong>Copyright 2017 Emilio Martinez. Toute reproduction  interdite</strong></p>
