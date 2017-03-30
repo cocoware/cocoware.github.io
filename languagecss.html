@@ -27,33 +27,86 @@
 					</ul>
 				</div>	
 			</nav>	
-			<h2>DEFINITION CSS </h2>
+			<h2 id="def">DEFINITION CSS </h2>
       <dt> CSS </dt>
       <dd> <em>Cascading StyleSheets</em> ou en français <Strong>feuille de styles en cascade</strong>.</dd>
-      <pre>
-			Création en 1996. Sa fonction est de mettre en forme du continu lui aplliquent ce qu'on appele des styles. CSS vas nous permettre par exemple de definir la tai-
-      taille, la couleur ou l'alignement du texte.
-      Pour finir nous pouvons dire que on utilise <mark>CSS</mark> sur notre code <mark>HTML</mark> afin d'enjoliver le resultat visual final.
+      <p>Création en 1996. Sa fonction est de mettre en forme du continu lui aplliquent ce qu'on appele des styles. CSS vas nous permettre par exemple</p>
+      <p>de definir la tai-taille, la couleur ou l'alignement du texte.Pour finir nous pouvons dire que on utilise <mark>CSS</mark> sur notre code <mark>HTML</mark></p>
+      <p>afin d'enjoliver le resultat visual final.</p>
       </pre>
-      <h2> TYPES DES ELEMENTS </h2>
-      <p> En CSS, il existe deux grandes familles d'éléments de type <strong>block</strong>, et des éléments de style <strong>in-line"</strong></p>
+      <h2 id="types"> TYPES DES ELEMENTS </h2>
+      <p> En CSS, il existe deux grandes familles: des éléments de type <strong>block</strong>, et des éléments de style <strong>in-line"</strong></p>
       <h3>Type bloc</h3>
       <p> Servent à la mise en page générale de la page en créant des grands rectangles "conteneurs"</p>
       <h3>Type in-line</h3>
       <p> Sont juste des conteneurs plus petites avec un comportément spécifique. Ces balises ont des marges externes et internes définies par défaut.</p>
       
-      <h2>LE FLUX</h2>
+      <h2 id="flux">LE FLUX</h2>
       <p>Le flux, c'est l'ordre d'affichage des élèments. Ainsi, le navigateur parcours votre page HTML, récupère les différents éléments, et les affiche dans un certain ordre.</p>
       <p>Les éléments de type <strong>block</strong> vont s'afficher les uns en dessous des autres, alors aue des éléments de type <strong>in-line</strong> vont s'affiché les </p>
       <p>uns à la suite des autres.</p>
-      <h2>POSITION</h2>
+      <h2 id="pos">POSITION</h2>
       <p> La propièté CSS position permet de modifier le comportement d'affichage des blocs.</p>
       <p> <strong>Position:static</strong>: l'élément doit se comporter normalement. Il suivra donc le flux sans se poser plus de questions.</p>
       <p> <strong>Position:fixed</strong>: placer un élément sur la page, et qu'il reste quel que soit sont défilement</p>
       <p> <strong>Position:relative</strong>: ne retire pas l'éléments du flux, mais le déplace simplement par rapport à sa position dans le flux</p>
       <p> <strong>Position:absolu</strong>: rétire complétement l'élément concerné du flux, et le placer aux coordonées définies par les propiétés bottom, left, right ou top</p>
-      <h2>ELEMENTS DISPLAY</h2>
+      <h2 id="disp">ELEMENTS DISPLAY</h2>
       <p>La propieté CSS display va nous permettre de modifier le type de nos éléments. Nous trouvons:</p>
+      <p><strong>None</strong>: élément n'est pas affiché.</p>
+      <p><strong>Block</strong>: l'élément est de type inline.</p>
+      <p><strong>Inline-block</strong>: l'élément est de type inline mais nous redimensionnable comme un block.</p>
+      <p><strong>List-item</strong>: l'élément devient liste à puces.</p>
+      <h2 id="select">SELECTEUR</h2>
+      <p>Le selecteur indique à quoi se rapportent un esemble des propiétés.</p>
+      <h3>Selecteur simple</h3>
+      <p>Il désigne les elements correspondant à une balise.</p>
+      <h3>Selecteur groupes</h3>
+      <p>Un groupe est composé de plusieurs balises séparées par des virgules. Il désigne tous les éléments correspondant à l'une des balises énumérées.</p>
+      <h3>Selecteur père-fils</h3>
+      <p>Une série des balises séparées par le signe &lt; désigne les éléments qui sont enfant directs d'un autre élément.</p>
+      <h3>Eléments consecutifs</h3>
+      <p>Une série des balises séparées par un + désigne les éléments qui suivent directement un autre éléments en ayant les même parent. Les deux éléments</p>
+      <p>successifs peuvent être sur la même balise comme dans autre.</p>
+      <h3>Selecteur par ID</h3>
+      <p>L'attribut ID peut être utilisé comme sélecteur. En principe l'ID est unique sur chaque page, ce aui signifie aue les règles ayant un ID comme sélecteur</p>
+      <p>ne s'appliqueront que sur un seul élément de chaque page.</p>
+      <h3>L'etoile</h3>
+      <p>Le selecteur étoile (*) désigne tous les éléments. Le selecteur est géneralement utilisé pour initiliaser une propiete commune à tous les éléments de la page</p>
+      <p>comme la police par exemple.</p>
+      <h2 id="propi">PROPIETES</h2>
+      <p> Les propietés vont définir les éléments. Je vais citer seulement certains entre eux.</p>
+      <h3>Font-family</h3>
+      <p>Elle définit la police de caractère utilisé. Lors du chargement de la page le navigateur cherche sur votre ordinateur la police déclarée</p>
+      <h3>Font-family</h3>
+      <p>Elle définit la police de caractère utilisé. Lors du chargement de la page le navigateur cherche sur votre ordinateur la police déclarée</p>
+      <h3>Font-size</h3>
+      <p>Elle définit la taille de la police de caractère. Elle prend comme paramètre un nombre et une unité que répresenteront une taille. Elle s'exprime en %,em ou px</p>
+      <h3>Font-weight</h3>
+      <p>Elle définit l'épaisseur de la police. 4 posibilités: bold, bolder, lighter et normal</p>
+      <h3>Text-align</h3>
+      <p>Elle définit l'alignement du texte dans son conteneurs</p>
+      <h3>Color</h3>
+      <p>Cette propièté definit la couleur du texte. Pour indiquer celle-ci, trois méthodes aux choix: le nom complet, en anglais, mais n'est pas possible que pour les couleurs base</p>
+      <p>, le code hexadecimal du type #91c225 ou le code RGB rgb(145,194,37)</p>
+      <h3>Background-color</h3>
+      <p>Cette propièté permet d'attribuer un couleur de fond à un élément texte, div, table. L'indicateur de couleur se fait de la même façon que pour les propiétés FONT.</p>
+      <h3>Width et Height</h3>
+      <p>Ces propiétés utilisés pour attribuer des valeurs de largeurs et hauter à un élément. S'il elle permmettent de déterminer une dimensions fixe, elle sont aussi utilisées </p>
+      <p>pour appliquer des limites de dimensions. Un bloc ayant des valeurs "auto" peut être complété par des indications de dimensions minimales et maximales. Ces dimensions </p>
+      <p>sont généralement exprimées en px, ou % et ces propietés se déclinent en 6 conditions: width, min-width, max-width,heigt, min-height et max-width.</p>
+      <aside class="sautpage">
+        <div class="som"><strong> Sommaire</strong></div>
+				<ol>
+          <li> <a href="#def">Definition CSS</a></li>
+					<li> <a href="#types">Types des éléments</a></li>
+          <li> <a href="#flux">Les flux </a></li>
+					<li> <a href="#pos">Position </a></li>
+					<li> <a href="#disp">Elements display</a></li>
+          <li> <a href="#select">Selecteur</a></li>
+          <li> <a href="#propi">Propietés</a></li>
+				</ol>
+			</aside>
 			<footer class="piedpage">  <p><strong>Copyright 2017 Emilio Martinez. Toute reproduction  interdite</strong></p>
 			</footer>
 		</body> 
