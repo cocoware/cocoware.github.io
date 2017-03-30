@@ -1,0 +1,269 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="UTF-8"/>
+			<title> HTML et CSS </title>
+			<link  rel="stylesheet" type="text/css" href="style.css"/>
+		</head>
+		<body class="corp">
+			<header>
+				<h1 class="titre1"> COURS HTML CSS </h1>
+			</header>
+			<nav >
+				<div class="table">
+					<ul> 
+						<li class="menu-in">
+							<a href="index.html"> Accueil </a>
+						</li>
+						<li class="menu-html">
+							<a href="languagehtml.html"> Html </a>
+						</li>
+						<li class="menu-css">
+							<a href="languagecss.html"> CSS </a>
+						</li>
+						<li class="menu-ref">
+							<a href="reference.html"> Lien d'interet </a>
+						</li>
+					</ul>
+				</div>	
+			</nav>	
+			<h2> DEFINITION HTML</h2>
+			<dt> HTML </dt>
+			<dd> <em>Hypertext Markup Language</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
+			
+			<p>Sa crèation a eu lieu en 1991. Sa fonction est structurer et donnée du sens à du contenu. Nous permettre d'inserer differents</p>
+			<p>types des elements des nos pages web: du texte des liens , des images,etc.</p>
+			<h2> DEFINITION D'UNE STRUCTURE MINIMAL D'UN DOCUMENT HTML </h2>
+			<pre class="blanc">
+			&lt; !DOCTYPEHTML&gt;  
+				&lt; html &gt;
+					&lt; head &gt;
+						&lt; meta charset="UTF-8"/&gt;
+						&lt; title &gt;
+					&lt; /head &gt; 
+					&lt; body &gt;
+					&lt; /body &gt;
+				&lt; /html &gt;   		
+			</pre>
+			<h2> TABLEAU</h2>
+			<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas).Pour chaque element du tableau nous avons  </p>
+			<p> une balise:</p>
+			
+			<pre class="blanc">
+			&lt; tableau &gt;
+				&lt; tr &gt;
+					&lt; td &gt;  Nom &lt;/td&gt;
+					&lt; td &gt;  Prenom &lt;/td&gt;
+				&lt; /tr &gt;
+			&lt; /tableau &gt;
+			</pre>
+			<p><strong>Exemple:</strong></p>
+			<table class="blanc">
+				<tr>
+					<td> tableau </td>
+					<td> &lt; tableau &gt; </td>
+				</tr>
+				<tr>
+					<td> ligne </td>
+					<td> &lt; tr &gt; </td>
+				</tr>
+				<tr>
+					<td> cellule </td>
+					<td> &lt; td &gt; </td>
+				</tr>
+			</table>
+		
+			<h3> Ligne d'entête et ligne de pied</h3>
+			<p> Pour creer un entête nous devons faire la commande suivante:</p>
+			<pre class="blanc">
+			&lt; tableau &gt;
+				&lt; thead &gt;
+					&lt; tr &gt;
+						&lt; th &gt;  Nom &lt;/th&gt;
+						&lt; th &gt;  Prenom &lt;/th&gt;
+					&lt; /tr &gt;
+				&lt; /thead &gt;
+			&lt; /tableau &gt;
+			</pre>
+
+			<p> Pour creer une ligne de pied nous devons faire la commande suivante:</p>
+			<pre class="blanc">
+			&lt; tableau &gt;	
+				&lt; tfoot &gt;
+					&lt; tr &gt;
+						&lt; th &gt; &lt;/th&gt;
+						&lt; th &gt; &lt;/th&gt;
+					&lt; tr &gt;
+				&lt; /foot &gt;
+			&lt; /tableau &gt;
+			</pre>	
+			<p>Pas importe ou se deplace "thead" ou "tfoot" ils vont se mettre dans la même position par defaut. Par contre il va toujours</p> 
+			<p>être lu en premier, et il doit être ècrit dans la premier ligne après la declaration de la balise tableau.</p>
+		    <p>Parfois nous avons besoin de surligner une ligne d'abord, pour cela nous devons utiliser la commande suivante:</p>
+			<pre class="blanc">
+			&lt; tableau &gt;	
+				&lt; tr &gt;
+					&lt; th &gt; A &lt;/th&gt;
+					&lt; td &gt; &lt;/td&gt;
+				&lt; /tr &gt;
+			&lt; /tableau &gt;
+			</pre>
+			<p><strong>Exemple:</strong></p>
+			<table class="blanc">
+				<thead>
+					<tr>
+						<th> Element </th>
+						<th> Balise </th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th> Element </th>
+						<th> Balise </th>
+					</tr>
+				</tfoot>
+				<tr>
+					<td> tableau </td>
+					<td> &lt; tableau &gt; </td>
+				</tr>
+				<tr>
+					<td> ligne </td>
+					<td> &lt; tr &gt; </td>
+				</tr>
+				<tr>
+					<td> cellule </td>
+					<td> &lt; td &gt; </td>
+				</tr>
+			</table>
+		
+			<h3> Fusionner des cellules</h3>
+			<p> Nous utilisons des attributs pour savoir la postion de largeur et longeur:</p>
+		
+			<pre class="blanc">
+			&lt; td rowspan = "2"
+					colspan = "2" / &gt;
+			</pre>
+		
+			<p><strong>Exemple:</strong></p>
+			<table class="blanc">
+				<tr>
+					<td rowspan="2"> tableau &lt; tableau &gt; </td>
+				</tr>
+				<tr>
+					<td> ligne </td>
+					<td> &lt; tr &gt; </td>
+				</tr>
+				<tr>
+					<td> cellule </td>
+					<td> &lt; td &gt; </td>
+				</tr>
+			</table>
+		
+			<h3> Ajouter une legende dans le tableau</h3>
+			<p> Dans la balise table nous ecrivons une balise caption avec le texte de la legende. Nous devons l'ecrire seulement au debut de la declaration de la table et</p>
+			<p>il faut que soit un enfent direct de notre table</p>
+			<pre class="blanc">			
+				&lt; caption &gt; Ma legende &lt;/caption &gt;
+			</pre>
+			<p><strong>Exemple:</strong></p>
+			<table class="blanc">
+				<caption> Ma legende </caption>
+				<tr>
+					<td> tableau </td>
+					<td> &lt; tableau &gt; </td>
+				</tr>
+				<tr>
+					<td> ligne </td>
+					<td> &lt; tr &gt; </td>
+				</tr>
+				<tr>
+					<td> cellule </td>
+					<td> &lt; td &gt; </td>
+				</tr>
+			</table>
+			<h2> BALISES POUR FAIRE DES LISTES </h2>
+	
+			<p> Il y a trois types des listes très utilisé </p>
+			<ol class="blanc">&lt; ol &gt;
+				<li>  &lt; li &gt; liste &lt; /li &gt; </li>
+				<li> &lt; li &gt;ordonne &lt; /li &gt; </li>
+				&lt; ol /&gt;
+			</ol>
+		
+			<ul class="blanc">&lt; ul &gt;
+				<li>  &lt; li &gt; <strong>liste</strong> &lt; /li &gt; </li>
+				<li> &lt; li &gt;<strong>desordonne</strong> &lt; /li &gt; </li>
+			
+				&lt; ul /&gt;
+			</ul>	
+	
+			<dl class="blanc">
+				<p>&lt; ol &gt;</p>
+				<dt>  &lt; dt &gt; <strong>therme</strong> &lt; /dt &gt; </dt>
+				<dd> &lt; dd &gt;<strong>definition</strong> &lt; /dd &gt; </dd>
+			
+				<p>&lt; dl /&gt;</p>
+			</dl>
+			<h2> Creer des liens </h2>
+			<p> Pour creer des liens nous avons besoin de utiliser du texte suivant </p>
+			<p> <strong>target</strong>: cet attribut indique où afficher la ressource liée. Il s'agit du nom, où de mot-vlé, d'un contexte</p>
+			<p>de navigation ( par exemple, un onglet, une fenêtre, où des &lt; iframe  &gt; ). Les mots-clès suivant ont un sens particulier:</p>
+				<ul>
+					<li> <strong>_self</strong>: charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut n'est pas renseigné.</li>
+					<li> <strong>_blank</strong>: charge la réponse dans un nouveau contexte de navigateur.</li>
+					<li> <strong>_parent</strong>: charge la réponse dans le &lt; iframe  &gt; courant où dans le contexte de navigateur HTML5 relativement au contextecourant.S'il n'y a pas de parent; l'option se comporte de la même façon que _self. </li>
+					<li> <strong>_top</strong>: en HTML4; charge la réponse dans la fenêtre originale, annulent toutes les autres frames. En HTML5; charge la reponse dans le contextede navigateur de plus haut niveau ( c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui même aucun parent). S'il n'y a pas de parent, l'option se comporte de la même façon que _self.</li>
+				</ul>	
+			<h3> Lien interne </h3>
+			<p> Les liens internes vont être des liens ramenant vers d'autres pages au sein d'un même site. Dans ce cas, nous allons renseigner</p>
+			<p>une valeur relative pour notre attribut <em>href</em>.</p>
+			<p> Pour creer des liens internes, il faut donc distinguer trois cas:</p>
+			<ol>
+				<li> Le cas où la page de départ et celle de destination sont dans une même dossier </li>
+				<li> Le cas où la page de destination est dans un sous dossier par rapport à la page de départ. </li>
+				<li> Le cas où la page de destination est dans un dossier parent par rapport à la page du départ.</li>
+			</ol>
+			<h3> Lien externe en HTML</h3>
+			<p> Les liens externes vont être des liens ramenant vers des pages d'autres sites. Pour créer un lien externe, on va devoir indiquer</p>
+			<p>l'URL complète de destination du lien.</p>
+			<h2> AJOUTER UNE IMAGE</h2>
+			<p> Pour ajouter une image nous avons besoin de saisir la commande suivante:</p>
+			<pre class="blanc">
+				&lt; img src="url.image" alt="texte" /&gt;
+			</pre>
+		
+			<p> Nous avons toujours besoin d'utiliser un texte pour differents raison entre autres pour les malveillants.</p>
+			<p> Exemple: </p>
+		
+			<img src="images.jpg" alt="Street art"/>
+			<h2> GIT ET GITHUB </h2>
+			 
+			<p>	La fonction <mark>git ini</mark> initialise le fichier. Il faut avoir le fichier tout seul, pour mettre le document à disparaitre d'internet.
+			Après on utlise <mark>git add -A</mark> pour mettre le dossier html sur git.
+			<mark>git status</mark> pour savoir l'etat de le dèpôt.
+			<mark>git commit -m "Firstcommit"</mark> avec ça le git. est prêt pour l'envoyer vers <strong>github </strong>
+			Après il faut s'enregistrer sur git
+	
+			</p>
+			<ul>
+				<li> git config --global user.name </li>
+				<li> git config --global user.email </li>
+				<li> git remote... </li>
+				<li> git push... </li>
+			
+			</ul>
+			<p>Après on refraichi la page.</p>
+			<aside class="sautpage">
+				<ol>
+					<li> Definition d'une structure minimal d'un document HTML</li>
+					<li> Tableau </li>
+					<li> Listes </li>
+					<li> Liens </li>
+					<li> Image </li>
+					<li> Git et GitHub </li>
+				</ol>
+			</aside>
+			<footer class="piedpage">  <p><strong>Copyright 2017 Emilio Martinez. Toute reproduction  interdite</strong></p>
+			</footer>
+		</body> 
+	</html> 

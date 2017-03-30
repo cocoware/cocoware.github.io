@@ -1,38 +1,87 @@
-.photo{
-	position: relative;
-	left: 50px;
-	bottom: 70px;
-	
+/* J ai choisi plusiers font-family au cas ou un langage n'est pas lu ou reconnu par un navigateur*/
+.corp{
+	font-family: "Century Gothic", Calibri, serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
 }
 .titre1{
-	position: relative;
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+}
+.entete{
+	height: 100px;
+}
+.piedpage{
+	height: 80px;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #C5C5C5;
+	border: 10px, groove, black;
+}
+/* Les 4 selecteurs suivant vont faire ma partie haut de ma page*/
+/*Faire une reset de marges de notre element ul*/
+nav ul{
+	margin: 0px;
+	padding: 0px;
+}
+/* Me permet de mettre les elements de menu en ligne*/
+nav li{
+	list-style-type: none;
+	float: left;
+}
+/* On va etends notre menu et le donne un couleur de fond*/
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+/* On donne de la forme à nos elements a*/
+nav a{
 	display: inline-block;
-	left: 550px;
-	color:#002F2F;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.table{
+	display: table;
+	margin: 0 auto;
+}
 
-	
+.introduction{
+	width:100%;
+	min-height:100px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	text-align:center;
 }
-.sommaire{
-	background-color: #EDF7F2;
-	border: 10px groove black;
 	
+.blanc{
+	background: linear-gradient(to right, blue, white);/* me permet de creer un fond avec une couleur degradient*/
+	margin-right: 280px;
+	text-align: center-left;
+}
+/*Les deux elements suivant n'ont pas besoin de class car je vais que tous les titre 2 et titre 3 ont une homogeneite*/
+h2{
+	color: #424558;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: Calibri, serif;
+}
+h3{
+	color: #A9A9A9;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: Arial, serif;
+}
+.sautpage{
+	 position: absolute;
+    top: 170px;
+    left: 1050px;
+    width: 200px;
+    height: 400px;
+    background-color: greenyellow
+}
 	
-	
-}
-.raccourci{
-	background-color: rgba(255,0,0,0.3);
-	border: 10px groove black;
-	display: inline-block;
-	position: relative;
-	left: 1250px;
-	top: -80px;
-	padding-bottom: 300px;
-}
-.texte{
-	
-	padding-right: 300px;
-	display: inline-block;
-}
-.corp{
-	background-color: #7FC6BC;
-}
