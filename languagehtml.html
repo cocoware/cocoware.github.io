@@ -31,13 +31,15 @@
         <h2> DEFINITION HTML</h2>
       </div>
 			<dt> HTML </dt>
-			<dd> <em>Hypertext Markup Language</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
+			<dd> <em>HyperText Markup Langage</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
 			
-			<p>Sa création a eu lieu en 1991. Sa fonction est structurer et donnée du sens où du contenu. Nous permettre d'inserer differents</p>
-			<p>types des elements des nos pages web: du texte des liens , des images,etc.</p>
+			<p>Sa création a eu lieu en 1991. Sa fonction est structurée et donnée du sens où du contenu. Nous permettre d'inserer différents</p>
+			<p>types des éléments des nos pages web: du texte des liens , des images,etc.</p>
       <div id="structure">
         <h2> DEFINITION D'UNE STRUCTURE MINIMAL D'UN DOCUMENT HTML </h2>
        </div>
+      <p> Les documents HTML doivent tous avoir une structure minimale. C'est-à-dire des balises qui sont toujours présentes et au milieu desquelles</p>
+      <p> vous allez ajouter votre propre contenu</p>
 			<pre class="red">
 			&lt; !DOCTYPEHTML&gt;  
 				&lt; html &gt;
@@ -51,21 +53,21 @@
 			</pre>
       <div id="balise">
         <h2> TYPE DES BALISES </h2>
+      <p> Un document HTML est un fichier texte qui contient des balises. Ces balises doivent être utilisées d'une certaine façon pour décrire correctement la structure</p>
+      <p> du document. Les balises indiquent au navigateur comment afficher le document, certaines balises permettent d'intègrer différents médias comme des images, des</p>
+      <p> videos ou des musiques parmi le texte de la page.</p>
       </div>
-		  <p> Les balises sont represente normalement par des chevrons <em>&lt; &gt;</em>. </p>
+		  <p> Les balises sont représentées normalement par des chevrons <em>&lt; &gt;</em>. </p>
 
-		  <h3> Balises ouvrantes, fermantes et autofermantes</h3>
+		  <h3> LA SYNTAXE DES BALISES</h3>
 
 		  <ol class="red"> 
 			  <li> &lt; Balise ouvrantes &gt;</li>
 			  <li> &lt; / Balise fermantes &gt; </li>
 			  <li> &lt; Balise autofermantes / &gt; </li>	
 		  </ol>
-		  <h2> BALISES BLOQUES </h2>
-	
-		  <p> Le contenu des balises bloques, va a essayer de occuper le maximun d'espace dans le bloque au niveau de largeur </p>
-
 		  <h3> BALISES POUR LES TITRES </h3>
+      <P> Ces balises permettent de définir des titres de différents niveaux; h1 pour les grands titres et h6 pour les titres des sections très spécifiques.</p>
 		  <pre class="red">
 			  &lt; h1 &gt; &lt; /h1 &gt;
 			  &lt; h2 &gt; &lt; /h2 &gt;	
@@ -75,24 +77,25 @@
 			  &lt; h6 &gt; &lt; /h6 &gt;	
 		  </pre> 			
 		  <h3> BALISE POUR LES TEXTES </h3>
+      <p>La balise utilisée pour créer des paragraphes, ces paragraphes sont généralement (automatiquement) séparés par des sautes de ligne.</p>
 		  <p class="red"> &lt; p &gt; &lt; /p &gt;</p>	
     
-		  <h3> BALISES EN LIGNE </h3>
-	
-		  <p> Son affichage est un à côté des autres </p>
-					
-		  <pre class="red"> &lt; em &gt; &lt; /em &gt; </pre>
+		  <h3> BALISE STRONG </h3>
+			<p> La syntaxe est: </p>		
+		  <pre class="red"> &lt; strong &gt; &lt; /strong &gt; </pre>
 		  <p> Utiliser pour donner une importance du texte </p>
-	
+      <h3> BALISE MARK </h3>
+			<p> La syntaxe est: </p>	
 		  <pre class="red"> &lt; mark &gt; &lt; /mark &gt; </pre>
 		  <p> Utiliser pour donner une très grand importance du texte </p>
-	
+      <h3> BALISE EM </h3>
+			<p> La syntaxe est: </p>	
 		  <pre class="red"> &lt; em &gt; &lt; /em &gt; </pre>
 		  <p> Utiliser pour surligner </p>
       <div id="tableau">
 			  <h2> TABLEAU</h2>
       </div>
-			<p> Un ensemble des lignes qui contient des cellules ( les colomnes n'existent pas).Pour chaque element du tableau nous avons  </p>
+			<p> Un ensemble des lignes qui contient des cellules ( les colonnes n'existent pas).Pour chaque element du tableau nous avons  </p>
 			<p> une balise:</p>
 			
 			<pre class="red">
@@ -120,7 +123,7 @@
 			</table>
 		
 			<h3> Ligne d'entête et ligne de pied</h3>
-			<p> Pour creer un entête nous devons faire la commande suivante:</p>
+			<p> Pour créer un entête, nous devons faire la commande suivante:</p>
 			<pre class="red">
 			&lt; tableau &gt;
 				&lt; thead &gt;
@@ -132,7 +135,7 @@
 			&lt; /tableau &gt;
 			</pre>
 
-			<p> Pour creer une ligne de pied nous devons faire la commande suivante:</p>
+			<p> Pour créer une ligne de pied, nous devons faire la commande suivante:</p>
 			<pre class="red">
 			&lt; tableau &gt;	
 				&lt; tfoot &gt;
@@ -143,8 +146,8 @@
 				&lt; /foot &gt;
 			&lt; /tableau &gt;
 			</pre>	
-			<p>Pas importe ou se deplace "thead" ou "tfoot" ils vont se mettre dans la même position par defaut. Par contre il va toujours</p> 
-			<p>être lu en premier, et il doit être écrit dans la premier ligne après la declaration de la balise tableau.</p>
+			<p>Pas importe ou se déplace "thead" ou "tfoot" ils vont se mettre dans la même position par défaut. Par contre il va toujours</p> 
+			<p>être lu en premier, et il doit être écrit dans la premier ligne après la déclaration de la balise tableau.</p>
 		    <p>Parfois nous avons besoin de surligner une ligne d'abord, pour cela nous devons utiliser la commande suivante:</p>
 			<pre class="red">
 			&lt; tableau &gt;	
@@ -183,7 +186,7 @@
 			</table>
 		
 			<h3> Fusionner des cellules</h3>
-			<p> Nous utilisons des attributs pour savoir la postion de largeur et longeur:</p>
+			<p> Nous utilisons des attributs pour savoir la position de largeur et longueur:</p>
 		
 			<pre class="red">
         &lt; td rowspan = "2"
@@ -205,15 +208,15 @@
 				</tr>
 			</table>
 		
-			<h3> Ajouter une legende dans le tableau</h3>
-			<p> Dans la balise table nous ecrivons une balise caption avec le texte de la legende. Nous devons l'ecrire seulement au debut de la declaration de la table et</p>
-			<p>il faut que soit un enfent direct de notre table</p>
+			<h3> Ajouter une légende dans le tableau</h3>
+			<p> Dans la balise table nous écrivons une balise caption avec le texte de la légende. Nous devons l'ecrire seulement au début de la déclaration de la table et</p>
+			<p>il faut que soit un enfant direct de notre table</p>
 			<pre class="red">			
-				&lt; caption &gt; Ma legende &lt;/caption &gt;
+				&lt; caption &gt; Ma légende &lt;/caption &gt;
 			</pre>
 			<p><strong>Exemple:</strong></p>
 			<table class="blanc">
-				<caption> Ma legende </caption>
+				<caption> Ma légende </caption>
 				<tr>
 					<td> tableau </td>
 					<td> &lt; tableau &gt; </td>
@@ -231,20 +234,21 @@
 			  <h2> BALISES POUR FAIRE DES LISTES </h2>
       </div>
 	
-			<p> Il y a trois types des listes très utilisé </p>
-			<ol class="red">&lt; ol &gt;
+			<p> Il y a trois types des listes très utilisées: </p>
+      <p><strong>Liste ordonnée:</strong>Les éléments de la liste doivent être lus ou réalisés dans un ordre donné, les éléments sont donc numérotés. On retrouve souvent</p>
+      <p>ces listes pour décrire des processus pas-à-pas (comme un mode d'emploi ou une recette) où chaque étape ne peut être réalisée que si l'action précédente a été traitée</p>			<ol class="red">&lt; ol &gt;
 				<li>  &lt; li &gt; liste &lt; /li &gt; </li>
 				<li> &lt; li &gt;ordonne &lt; /li &gt; </li>
 				&lt; ol /&gt;
 			</ol>
-		
+      <p><strong>Liste non-ordonnée:</strong>Les listes non-ordonnées n'ont pas de notion d'ordre et on peut mélanger leurs éléments sans que cela modifie leur sens</p>
 			<ul class="red">&lt; ul &gt;
 				<li>  &lt; li &gt; <strong>liste</strong> &lt; /li &gt; </li>
 				<li> &lt; li &gt;<strong>desordonne</strong> &lt; /li &gt; </li>
 			
 				&lt; ul /&gt;
 			</ul>	
-	
+      <p><strong>Therme et sa definition:</strong>Permet de faire da façon propre la définition d'un mot spécifique</p>
 			<dl class="red">
 				<p>&lt; ol &gt;</p>
 				<dt>  &lt; dt &gt; <strong>therme</strong> &lt; /dt &gt; </dt>
@@ -252,16 +256,30 @@
 			
 				<p>&lt; dl /&gt;</p>
 			</dl>
+      <p><strong>Les listes imbriquées: </strong>On voit souvent plusieurs listes placées les unes dans les autres. Autrement dit, on peut imbriquer des listes</p>
+      <p>(un élément d'une liste sera une liste entière) :</p>
+      <p><strong>Exemple:</strong>
+      <ul class="blanc">
+        <li>Un composant</li>
+        <li>Un processus :
+           <ol>
+            <li>Étape 1</li>
+            <li>Étape 2</li>
+            <li>Étape 3</li>
+          </ol>
+        </li>
+        <li>Un composant</li>
+      </ul>
       <div id="liens">
-			  <h2> Creer des liens </h2>
+			  <h2> Créer des liens </h2>
       </div>
-			<p> Pour creer des liens nous avons besoin de utiliser du texte suivant </p>
+			<p> Pour créer des liens nous avons besoin de utiliser du texte suivant </p>
 			<p> <strong>target</strong>: cet attribut indique où afficher la ressource liée. Il s'agit du nom, où de mot-clé, d'un contexte</p>
 			<p>de navigation ( par exemple, un onglet, une fenêtre, où des &lt; iframe  &gt; ). Les mots-clés suivant ont un sens particulier:</p>
 				<ul>
 					<li> <strong>_self</strong>: charge la réponse dans le contexte de navigation courant. Il s'agit de la valeur par défaut quand l'attribut n'est pas renseigné.</li>
 					<li> <strong>_blank</strong>: charge la réponse dans un nouveau contexte de navigateur.</li>
-					<li> <p><strong>_parent</strong>: charge la réponse dans le &lt; iframe  &gt; courant où dans le contexte de navigateur HTML5 relativement au contextecourant.</p>
+					<li> <p><strong>_parent</strong>: charge la réponse dans le &lt; iframe  &gt; courant où dans le contexte de navigateur HTML5 relativement au contexte courant.</p>
           <p>S'il n'y a pas de parent; l'option se comporte de la même façon que _self.</p> </li>
 					<li> <p><strong>_top</strong>: en HTML4; charge la réponse dans la fenêtre originale, annulent toutes les autres frames. En HTML5; charge la reponse dans le</p>
           <p>contextede navigateur de plus haut niveau ( c'est à dire, le contexte de navigation parent par rapport à l'actuel, et qui n'a lui même aucun parent).</p>
@@ -270,7 +288,7 @@
 			<h3> Lien interne </h3>
 			<p> Les liens internes vont être des liens ramenant vers d'autres pages au sein d'un même site. Dans ce cas, nous allons renseigner</p>
 			<p>une valeur relative pour notre attribut <em>href</em>.</p>
-			<p> Pour creer des liens internes, il faut donc distinguer trois cas:</p>
+			<p> Pour créer des liens internes, il faut donc distinguer trois cas:</p>
 			<ol>
 				<li> Le cas où la page de départ et celle de destination sont dans une même dossier </li>
 				<li> Le cas où la page de destination est dans un sous dossier par rapport à la page de départ. </li>
@@ -287,10 +305,23 @@
 				&lt; img src="url.image" alt="texte" /&gt;
 			</pre>
 		
-			<p> Nous avons toujours besoin d'utiliser un texte pour differents raison entre autres pour les malvoyants.</p>
-			<p> Exemple: </p>
+			<p> Nous avons toujours besoin d'utiliser un texte pour différents raison entre autres pour les malvoyants.</p>
+			<p> <strong>Exemple:</strong> </p>
 		
 			<img src="images.jpg" alt="Street art"/>
+      
+      <p>Nous avons trois styles différents des images : .jpg, .png et .GIF.</p>
+      <p><strong>.JPG </strong>= conçut pour reduire le poids des photos, qui peuvent comporter plus de 16 millions des couleurs différents.</p>
+      <p> Le .JPG déteriore un peu la qualité de l'image, d'une façon généralement imperceptible.</p>
+      <p><strong>.PNG </strong>= ce format est adapté à la plupart des graphiques. Le PNG à deux gros avantages; il peut être rendu transparent</p>
+      <p> et il n'altère pas la qualité de l'image. La compression du JPG est plus puissante sur les photos. Une photo enregistrée en JPG se chargera</p>
+      <p> toujours beaucoup plus vite que si'elle était enregistré en PNG.
+      <p><strong>.GIF </strong>= le format GIF est limité à 256 couleurs. Le GIF conserve un certain avantage que le PNG n'a pas: il peut être animé.</p>
+      
+      <p><strong>Dimension des images</strong></p>
+      <p>Nous pouvons utiliser le code css pour redimensionner les images ; mais ce n’est pas recommandé. En plus ça peut varier en fonction du navigateur.</p>
+      <p>Faire attention à la dimension que nous avons dans l’image, c’est toujours mieux de redimensionner les images avant de l’utiliser sur le code.</p>
+
       <div id="git">
 			  <h2> GIT ET GITHUB </h2>
       </div>
