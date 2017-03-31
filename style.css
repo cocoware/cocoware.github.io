@@ -82,12 +82,10 @@ h3{
 	font-family: Calibri, serif;
 }
 .sautpage{
-  position:fixed;
-  top: 170px;
-  left: 1250px;
-  width: 200px;
-  height: 400px;
+  display:table;
+  align-content: flex-end;
   background-color: #C5C5C5;
+  
 }
 .som{
   font-size: 25px;
@@ -131,11 +129,16 @@ transform: skew(-20deg);
 }
 .style{
   box-shadow: 0 0 15px #00f;
-
+ 
 }
 .style1{
   box-shadow: 0 0 15px #FF0000;
-
+  
+}
+.position{
+  flex-direction:row;
+  padding: 20px;
+ 
 }
 
 
