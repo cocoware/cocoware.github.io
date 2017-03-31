@@ -82,8 +82,11 @@ h3{
 	font-family: Calibri, serif;
 }
 .sautpage{
-  display:table;
-  align-content: flex-end;
+  position: sticky;
+  top: 40px;
+  left: 1250px;
+  width:20%;
+  float: right;
   background-color: #C5C5C5;
   
 }
