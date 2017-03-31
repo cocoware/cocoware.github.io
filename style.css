@@ -107,6 +107,9 @@ h3{
 .ref:hover{
   background-color:rgba(228,7,38,0.15)
 }
+.contact:hover{
+  background-color:rgba(204,0,204,0.15)
+}
 .gadget:hover{
 
 transform: skew(-10deg);
