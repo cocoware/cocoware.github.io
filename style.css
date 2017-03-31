@@ -118,6 +118,12 @@ transform: skew(-10deg);
 	text-align:center;
 	font-size:15px;
 }
+.flex{
+  display: flex;
+  flex-direction :column;
+  
+}
+
 
 	
 	
