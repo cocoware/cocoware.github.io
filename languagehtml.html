@@ -6,22 +6,22 @@
 			<link  rel="stylesheet" type="text/css" href="style.css"/>
 		</head>
 		<body class="corp">
-			<header>
+			<header class="entete">
 				<h1 class="titre1"> COURS HTML CSS </h1>
 			</header>
 			<nav >
 				<div class="table">
 					<ul> 
-						<li class="menu-in">
+						<li class="accueil">
 							<a href="index.html"> Accueil </a>
 						</li>
-						<li class="menu-html">
+						<li class="html">
 							<a href="languagehtml.html"> Html </a>
 						</li>
-						<li class="menu-css">
+						<li class="css">
 							<a href="languagecss.html"> CSS </a>
 						</li>
-						<li class="menu-ref">
+						<li class="ref">
 							<a href="reference.html"> Lien d'interet </a>
 						</li>
 					</ul>
@@ -83,15 +83,15 @@
 		  <h3> BALISE STRONG </h3>
 			<p> La syntaxe est: </p>		
 		  <pre class="red"> &lt; strong &gt; &lt; /strong &gt; </pre>
-		  <p> Utiliser pour donner une importance du texte </p>
+		  <p> <strong>Utiliser pour donner une importance du texte</strong> </p>
       <h3> BALISE MARK </h3>
 			<p> La syntaxe est: </p>	
 		  <pre class="red"> &lt; mark &gt; &lt; /mark &gt; </pre>
-		  <p> Utiliser pour donner une très grand importance du texte </p>
+		  <p> <mark>Utiliser pour surligner</mark> </p>
       <h3> BALISE EM </h3>
 			<p> La syntaxe est: </p>	
 		  <pre class="red"> &lt; em &gt; &lt; /em &gt; </pre>
-		  <p> Utiliser pour surligner </p>
+		  <p> <em>Utiliser pour mettre en valeur des informations</em> </p>
       <div id="tableau">
 			  <h2> TABLEAU</h2>
       </div>
@@ -106,6 +106,7 @@
 				&lt; /tr &gt;
 			&lt; /tableau &gt;
 			</pre>
+			<div class="exem">
 			<p><strong>Exemple:</strong></p>
 			<table class="blanc">
 				<tr>
@@ -121,6 +122,7 @@
 					<td> &lt; td &gt; </td>
 				</tr>
 			</table>
+			</div>
 		
 			<h3> Ligne d'entête et ligne de pied</h3>
 			<p> Pour créer un entête, nous devons faire la commande suivante:</p>
@@ -157,6 +159,7 @@
 				&lt; /tr &gt;
 			&lt; /tableau &gt;
 			</pre>
+			<div class="exem">
 			<p><strong>Exemple:</strong></p>
 			<table class="blanc">
 				<thead>
@@ -184,6 +187,7 @@
 					<td> &lt; td &gt; </td>
 				</tr>
 			</table>
+			</div>
 		
 			<h3> Fusionner des cellules</h3>
 			<p> Nous utilisons des attributs pour savoir la position de largeur et longueur:</p>
@@ -192,7 +196,7 @@
         &lt; td rowspan = "2"
 				colspan = "2" / &gt;
 			</pre>
-		
+			<div class="exem">
 			<p><strong>Exemple:</strong></p>
 			<table class="blanc">
 				<tr>
@@ -207,6 +211,7 @@
 					<td> &lt; td &gt; </td>
 				</tr>
 			</table>
+			</div>
 		
 			<h3> Ajouter une légende dans le tableau</h3>
 			<p> Dans la balise table nous écrivons une balise caption avec le texte de la légende. Nous devons l'ecrire seulement au début de la déclaration de la table et</p>
@@ -214,6 +219,7 @@
 			<pre class="red">			
 				&lt; caption &gt; Ma légende &lt;/caption &gt;
 			</pre>
+			<div class="exem">
 			<p><strong>Exemple:</strong></p>
 			<table class="blanc">
 				<caption> Ma légende </caption>
@@ -230,6 +236,7 @@
 					<td> &lt; td &gt; </td>
 				</tr>
 			</table>
+			</div>
       <div id="listes">
 			  <h2> BALISES POUR FAIRE DES LISTES </h2>
       </div>
@@ -258,6 +265,7 @@
 			</dl>
       <p><strong>Les listes imbriquées: </strong>On voit souvent plusieurs listes placées les unes dans les autres. Autrement dit, on peut imbriquer des listes</p>
       <p>(un élément d'une liste sera une liste entière) :</p>
+	  <div class="exem">
       <p><strong>Exemple:</strong>
       <ul class="blanc">
         <li>Un composant</li>
@@ -270,6 +278,7 @@
         </li>
         <li>Un composant</li>
       </ul>
+	  </div>
       <div id="liens">
 			  <h2> Créer des liens </h2>
       </div>
@@ -317,6 +326,7 @@
       <p> et il n'altère pas la qualité de l'image. La compression du JPG est plus puissante sur les photos. Une photo enregistrée en JPG se chargera</p>
       <p> toujours beaucoup plus vite que si'elle était enregistré en PNG.
       <p><strong>.GIF </strong>= le format GIF est limité à 256 couleurs. Le GIF conserve un certain avantage que le PNG n'a pas: il peut être animé.</p>
+	  <img src= "glace.gif" alt="exemple gif" />
       
       <p><strong>Dimension des images</strong></p>
       <p>Nous pouvons utiliser le code css pour redimensionner les images ; mais ce n’est pas recommandé. En plus ça peut varier en fonction du navigateur.</p>
@@ -326,10 +336,10 @@
 			  <h2> GIT ET GITHUB </h2>
       </div>
 			 
-			<p>	La fonction <mark>git ini</mark> initialise le fichier. Il faut avoir le fichier tout seul, pour mettre le document à disparaitre d'internet.</p>
-			<p>Après on utlise <mark>git add -A</mark> pour mettre le dossier html sur git.</p>
-			<p>Nous utilisons<mark>git status</mark> pour savoir l'etat de le dépôt.</p>
-			<p>Pour finir<mark>git commit -m "Firstcommit"</mark> le git. est prêt pour l'envoyer vers <strong>github </strong></p>
+			<p>	La fonction <strong>git ini</strong> initialise le fichier. Il faut avoir le fichier tout seul, pour mettre le document à disparaitre d'internet.</p>
+			<p>Après on utlise <strong>git add -A</strong> pour mettre le dossier html sur git.</p>
+			<p>Nous utilisons <strong>git status</strong> pour savoir l'etat de le dépôt.</p>
+			<p>Pour finir <strong>git commit -m "Firstcommit"</strong> le git. est prêt pour l'envoyer vers <strong>github </strong></p>
 			<p>Après il faut s'enregistrer sur git</p>
 	
 			</p>
@@ -354,7 +364,7 @@
 					<li> <a href="#git">Git et GitHub </a></li>
 				</ol>
 			</aside>
-			<footer class="piedpage">  <p><strong>Copyright 2017 Emilio Martinez. Toute reproduction  interdite</strong></p>
+			<footer class="piedpage">  <p><strong>Emilio Martinez</strong></p>
 			</footer>
 		</body> 
 	</html> 

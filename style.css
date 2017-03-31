@@ -1,8 +1,8 @@
 /* J ai choisi plusiers font-family au cas ou un langage n'est pas lu ou reconnu par un navigateur*/
 .corp{
 	font-family: "Century Gothic", Calibri, serif;
-	font-size: 13px;
-	margin: 10px;
+	font-size: 12px;
+	margin: 15px;
 	padding: 0px;
 }
 .titre1{
@@ -28,7 +28,7 @@ nav ul{
 }
 /* Me permet de mettre les elements de menu en ligne*/
 nav li{
-	list-style-type: none;
+	list-style-type: none;/*supprime le style par defaut*/
 	float: left;
 }
 /* On va etends notre menu et le donne un couleur de fond*/
@@ -79,10 +79,10 @@ h3{
 	color: #A9A9A9;
 	text-transform: uppercase;
 	font-size: 15px;
-	font-family: Arial, serif;
+	font-family: Calibri, serif;
 }
 .sautpage{
-	display: inline-block;
+  position:fixed;
   top: 170px;
   left: 1250px;
   width: 200px;
@@ -94,4 +94,31 @@ h3{
   text-transform: uppercase;
   text-align: center;
 }
+.accueil:hover{
+  background-color: rgba(64,200,130,0.15)
+}
+.html:hover{
+	
+  background-color: rgba(241,211,79,0.15)
+}
+.css:hover{
+  background-color: rgba(000,112,192,0.15)
+}
+.ref:hover{
+  background-color:rgba(228,7,38,0.15)
+}
+.gadget:hover{
+
+transform: skew(-10deg);
+}
+.ext{
+	text-align:center;
+	font-size:15px;
+}
+
+	
+	
+	
+	
+	
 	
