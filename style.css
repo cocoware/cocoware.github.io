@@ -112,16 +112,30 @@ h3{
 }
 .gadget:hover{
 
-transform: skew(-10deg);
+transform: skew(-20deg);
 }
-.ext{
+.ext{ /* pour le format des la page references*/
 	text-align:center;
 	font-size:15px;
 }
-.flex{
+.flex{ /* utiliser pour le page contact*/
   display: flex;
-  flex-direction :column;
+  flex-direction:column;
+  align-items:center;
   
+} 
+.container{
+  margin: 10px;
+  padding: 10px;
+ 
+}
+.style{
+  box-shadow: 0 0 15px #00f;
+
+}
+.style1{
+  box-shadow: 0 0 15px #FF0000;
+
 }
 
 
