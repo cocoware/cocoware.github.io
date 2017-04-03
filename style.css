@@ -83,7 +83,7 @@ h3{
 }
 .sautpage{
   position: sticky;
-  top: 40px;
+  top: 0px;
   left: 1250px;
   width:20%;
   float: right;
