@@ -45,13 +45,14 @@
         </ol>
       </aside>
 			<h2 id="def">DEFINITION CSS </h2>
-      <dt> CSS </dt>
-      <dd> <em>Cascading StyleSheets</em> ou en français <Strong>feuille de styles en cascade</strong>.</dd>
+      <dl>
+        <dt> CSS </dt>
+        <dd> <em>Cascading StyleSheets</em> ou en français <Strong>feuille de styles en cascade</strong>.</dd>
+      </dl>
       <p>Création en 1996. Sa fonction est de mettre en forme du continu lui aplliquent ce qu'on appele des styles. CSS vas nous permettre par exemple</p>
       <p>de definir la tai-taille, la couleur ou l'alignement du texte.Pour finir nous pouvons dire que on utilise <mark>CSS</mark> sur notre code <mark>HTML</mark></p>
       <p>afin d'enjoliver le resultat visual final.</p>
       <img src= "element.png" alt="structure padding" />
-      </pre>
       <h2 id="types"> TYPES DES ELEMENTS </h2>
       <p> En CSS, il existe deux grandes familles: des éléments de type <strong>block</strong>, et des éléments de style <strong>in-line"</strong></p>
       <h3>Type bloc</h3>
@@ -123,14 +124,14 @@
       <h3> L'ELEMENT FORM </h3>
       <p> Le élément form nous permet de définir un formulaire. Il y a besoin des 2 attributs: L'attribut <strong>method</strong> et <strong>action</strong>.</p>
       <p> L'attribut method va indiuer comme doivent être envoyées les données saisies àr l'utilisateur. Cet attribut peut prendre deux valeurs: <strong>get</strong> et <strong>post</strong></p>
-      <ol>
+      <dl>
         <dt>Get</dt >
         <dd>envoi des données via l'URL nous sommes limités dans la qualité des données. </dd > 
-      </ol>
-      <ol>
+      </dl>
+      <dl>
         <dt>Post</dt >
         <dd>nous ne sommes pas limités dans la quantité des données pouvant être envoyées et les données ne sont pas visibles par personne.</dd > 
-      </ol>
+      </dl>
       <p> L'attribut action va lui nous servir à preciser l'adresse relative de la page dans laquelle les données doivent ètre traités.</p>
       <h3>LES ELEMENTS INPUT,TEXTAREA ET LABEL</h3>
       <p> L'élément <strong>input</strong> se présente sous la forme d'une balise orpheline est poséde un attribut type auquel on va pouvoir donner des nombreuses valeurs.Ex: text,mail..etc</p>
@@ -139,11 +140,11 @@
       <p> for et id afin de lier entre eux un label et un élément de formulaire</p>
       <p> L'élément <strong>textarea</strong> va nous permetre de créer un champ de texte multi-lignes, pouvant accuellir par exemple un commentaire.</p>
       <p><strong>Exemple:</strong>
-      <form   action="" method="post">
+      <form   action="null" method="post">
         <label  for="name"> <strong>Nom:</strong> </label>    
         <input type="text" name="user_name" id="name"/>
         <label for="commentaire"> <strong>Commentaire:</strong> </label>
-        <textarea type="text" name="user_name" id="commentaire"> </textarea>
+        <textarea name="user_name" id="commentaire"> </textarea>
       </form>
       <h3> L'ATTRIBUT NAME</h3>
       <p>Nous devons preciser un attribut <strong>name</strong>, pour chaque élément de notre formulaire demandant des informations à l'utilisateur.</p>
@@ -181,11 +182,11 @@
       </fieldset>
       <h3>INPUT TYPE = "CHECKBOX"</h3>
       <p> Le type checkbox ressemble à la valeur radio, mais l'utilisateur peut ne choisir auncun choix, un choix ou même plusieurs choix.</p>
-        <input type="checkbox" id="chekbox" name="checkbox"/>
-        <label for="checkbox"> Techno </label>
-        <input type="checkbox" id="chekbox" name="checkbox"/>
+        <input type="checkbox" id="check-box" name="checkbox"/>
+        <label for="check-box"> Techno </label>
+        <input type="checkbox" id="cbox" name="checkbox"/>
         <label for="cbox"> Dubstep </label>
-        <input type="checkbox" id="chekbox" name="checkbox"/>
+        <input type="checkbox" id="check" name="checkbox"/>
         <label for="check"> Drum 'n bass </label>
       <h3>INPUT TYPE = "SUBMIT"</h3>
       <p> Un élément input type submit va nous permettre de créer un bouton d'envoi des données du formulaire. Pas besoin d'utiliser un attribut name sinon valeur</p>

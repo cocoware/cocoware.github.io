@@ -46,9 +46,10 @@
       <div id="definition">
         <h2> DEFINITION HTML</h2>
       </div>
-			<dt> HTML </dt>
-			<dd> <em>HyperText Markup Langage</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
-			
+      <dl>
+        <dt> HTML </dt>
+        <dd> <em>HyperText Markup Langage</em> ou en français <Strong>langage de balisage hypertext</strong>.</dd>
+			</dl>
 			<p>Sa création a eu lieu en 1991. Sa fonction est structurée et donnée du sens où du contenu. Nous permettre d'inserer différents</p>
 			<p>types des éléments des nos pages web: du texte des liens , des images,etc.</p>
       <div id="structure">
@@ -181,25 +182,23 @@
 						<th> Element </th>
 						<th> Balise </th>
 					</tr>
-				</thead>
-				<tfoot>
 					<tr>
 						<th> Element </th>
 						<th> Balise </th>
 					</tr>
-				</tfoot>
-				<tr>
-					<td> tableau </td>
-					<td> &lt; tableau &gt; </td>
-				</tr>
-				<tr>
-					<td> ligne </td>
-					<td> &lt; tr &gt; </td>
-				</tr>
-				<tr>
-					<td> cellule </td>
-					<td> &lt; td &gt; </td>
-				</tr>
+          <tr>
+            <td> tableau </td>
+            <td> &lt; tableau &gt; </td>
+          </tr>
+          <tr>
+            <td> ligne </td>
+            <td> &lt; tr &gt; </td>
+          </tr>
+          <tr>
+            <td> cellule </td>
+            <td> &lt; td &gt; </td>
+          </tr>
+        </thead>
 			</table>
 			
 		
@@ -257,10 +256,12 @@
 	
 			<p> Il y a trois types des listes très utilisées: </p>
       <p><strong>Liste ordonnée:</strong>Les éléments de la liste doivent être lus ou réalisés dans un ordre donné, les éléments sont donc numérotés. On retrouve souvent</p>
-      <p>ces listes pour décrire des processus pas-à-pas (comme un mode d'emploi ou une recette) où chaque étape ne peut être réalisée que si l'action précédente a été traitée</p>			<ol class="red">&lt; ol &gt;
-				<li>  &lt; li &gt; liste &lt; /li &gt; </li>
+      <p>ces listes pour décrire des processus pas-à-pas (comme un mode d'emploi ou une recette) où chaque étape ne peut être réalisée que si l'action précédente a été traitée</p>			
+      <ol class="red">
+        &lt; ol &gt;
+        <li>  &lt; li &gt; liste &lt; /li &gt; </li>
 				<li> &lt; li &gt;ordonne &lt; /li &gt; </li>
-				&lt; ol /&gt;
+				&lt; /ol &gt;
 			</ol>
       <p><strong>Liste non-ordonnée:</strong>Les listes non-ordonnées n'ont pas de notion d'ordre et on peut mélanger leurs éléments sans que cela modifie leur sens</p>
 			<ul class="red">&lt; ul &gt;
